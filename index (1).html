@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aravindh Pallapu | Student Portfolio</title>
+<meta name="description" content="Portfolio of Aravindh Pallapu, a Computer Science/Information Technology undergraduate at Washington University of Science and Technology.">
+<style>
+:root{
+  --bg:#0b1020; --card:#121a2d; --text:#edf2f7; --muted:#aab6ca;
+  --accent:#61dafb; --accent2:#8b7cff; --line:#25304a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#080c18 0%,#0b1020 45%,#0e1425 100%);color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{width:min(1100px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(8,12,24,.84);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.logo{font-weight:800;letter-spacing:.5px}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:22px;font-size:14px;color:var(--muted)}
+.nav-links a:hover{color:var(--text)}
+.hero{min-height:88vh;display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:center;padding:80px 0}
+.eyebrow{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:13px}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.02;margin:15px 0}
+.gradient{background:linear-gradient(90deg,#fff,var(--accent),#a995ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:19px;color:var(--muted);max-width:680px}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:12px 18px;border-radius:10px;border:1px solid var(--line);font-weight:700}
+.btn.primary{background:var(--text);color:#0a0f1d;border-color:var(--text)}
+.btn:hover{transform:translateY(-1px)}
+.photo-wrap{display:flex;justify-content:center}
+.photo{width:270px;height:270px;object-fit:cover;border-radius:50%;border:7px solid #1b2740;box-shadow:0 0 70px rgba(97,218,251,.12)}
+section{padding:80px 0}
+.section-title{font-size:34px;margin-bottom:10px}
+.section-sub{color:var(--muted);margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:rgba(18,26,45,.82);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{margin-bottom:8px}
+.card p,.card li{color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}
+.tag{padding:7px 11px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:#dce6f5;background:#0d1527}
+.timeline{border-left:2px solid var(--line);padding-left:22px}
+.item{margin-bottom:26px}
+.item .year{color:var(--accent);font-size:13px;font-weight:700}
+.project{display:flex;flex-direction:column;height:100%}
+.project .tags{margin-top:auto;padding-top:20px}
+.achievement{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+.achievement img{width:100%;border-radius:14px;border:1px solid var(--line)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact a{color:var(--accent)}
+footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);text-align:center}
+@media(max-width:760px){
+ .nav-links{display:none}.hero{grid-template-columns:1fr;text-align:center;padding-top:60px}
+ .hero p{margin:auto}.buttons{justify-content:center}.grid,.contact,.achievement{grid-template-columns:1fr}
+ .photo{width:210px;height:210px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="container nav-inner">
+    <div class="logo">Aravindh<span>.</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+      <a href="#education">Education</a><a href="#achievement">Achievement</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="container hero">
+  <div>
+    <div class="eyebrow">Student • Software Engineering • Problem Solving</div>
+    <h1>Hi, I'm <span class="gradient">Aravindh Pallapu.</span></h1>
+    <p>
+      An undergraduate student at Washington University of Science and Technology,
+      interested in serving real-time problem solving and building practical software solutions.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">View My Projects</a>
+      <a class="btn" href="mailto:apallapu.student@wust.edu">Contact Me</a>
+    </div>
+  </div>
+  <div class="photo-wrap">
+    <img class="photo" src="profile-new.png" alt="Aravindh Pallapu profile photo">
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-sub">A short introduction.</p>
+    <div class="card">
+      <p>
+        I am a 3rd-year undergraduate student at Washington University of Science and Technology
+        with a career goal of becoming a Software Engineer. I enjoy problem solving,
+        web development, and learning technologies that can be applied to real-world challenges.
+        I am particularly interested in building useful, reliable applications rather than
+        solving problems only in theory.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-sub">Technologies and areas I am developing.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Programming</h3>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">C</span>
+          <span class="tag">Problem Solving</span><span class="tag">DSA</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Web & Databases</h3>
+        <div class="tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span>
+          <span class="tag">MySQL</span><span class="tag">Web Development</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Core Subjects</h3>
+        <div class="tags">
+          <span class="tag">Data Structures & Algorithms</span>
+          <span class="tag">DBMS</span><span class="tag">Computer Networks</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <div class="tags">
+          <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">Selected projects from my resume.</p>
+    <div class="grid">
+      <article class="card project">
+        <div>
+          <h3>AI Log Analyzer</h3>
+          <p>
+            An AI-powered log analysis application built with Python and Streamlit.
+            It uses the Google Gemini API and LLMs to summarize logs, classify issue severity,
+            identify possible root causes, and recommend solutions.
+          </p>
+        </div>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">Streamlit</span>
+          <span class="tag">Gemini API</span><span class="tag">LLMs</span>
+          <span class="tag">Prompt Engineering</span>
+        </div>
+      </article>
+
+      <article class="card project">
+        <div>
+          <h3>AgroInvest – Smart Crop Investment Platform</h3>
+          <p>
+            A web platform connecting farmers with investors through crop funding and
+            profit-sharing. The project includes role-based authentication, crop management,
+            investment tracking, wallet management, ROI calculation, dashboards, and
+            harvest-based profit distribution.
+          </p>
+        </div>
+        <div class="tags">
+          <span class="tag">Web Development</span><span class="tag">Authentication</span>
+          <span class="tag">Database</span><span class="tag">Dashboards</span>
+          <span class="tag">ROI</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <p class="section-sub">Academic background.</p>
+    <div class="timeline">
+      <div class="item">
+        <div class="year">2022 – Expected 2028</div>
+        <h3>Washington University of Science and Technology</h3>
+        <p>Undergraduate student • 3rd Year</p>
+        <p>Resume-listed GPA: 3.74 / 4.0</p>
+      </div>
+      <div class="item">
+        <div class="year">2020 – 2022</div>
+        <h3>Kshatriya Junior College</h3>
+        <p>Percentage: 80%</p>
+      </div>
+      <div class="item">
+        <div class="year">2008 – 2020</div>
+        <h3>Ravi High School</h3>
+        <p>GPA: 10 / 10</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="achievement">
+  <div class="container">
+    <h2 class="section-title">Achievement</h2>
+    <p class="section-sub">Academic recognition.</p>
+    <div class="achievement">
+      <div class="card">
+        <h3>President's List — Winter 2025</h3>
+        <p>
+          Recognized at Washington University of Science and Technology for achieving
+          a 4.0 GPA in the Winter 2025 term.
+        </p>
+        <div class="tags"><span class="tag">4.0 GPA</span><span class="tag">Academic Excellence</span></div>
+      </div>
+      <img src="presidents-list.png" alt="President's List certificate for Aravindh Pallapu">
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="section-sub">I'm open to learning, collaboration, internships, and software engineering opportunities.</p>
+    <div class="contact">
+      <div class="card">
+        <h3>Email</h3>
+        <p><a href="mailto:apallapu.student@wust.edu">apallapu.student@wust.edu</a></p>
+      </div>
+      <div class="card">
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/aravindh-pallapu-43323940a" target="_blank" rel="noopener">linkedin.com/in/aravindh-pallapu-43323940a</a></p>
+      </div>
+      <div class="card">
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/apallapustudent-beep" target="_blank" rel="noopener">github.com/apallapustudent-beep</a></p>
+      </div>
+      <div class="card">
+        <h3>Phone</h3>
+        <p><a href="tel:+17707783351">+1 (770) 778-3351</a></p>
+      </div>
+      <div class="card">
+        <h3>Career Goal</h3>
+        <p>Software Engineer</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© 2026 Aravindh Pallapu • Student Portfolio</div>
+</footer>
+</body>
+</html>
